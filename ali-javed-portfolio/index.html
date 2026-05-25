@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Javed | AI Website Developer & Cybersecurity Specialist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Ali Javed - AI Website Developer & Cybersecurity Specialist. Providing cutting-edge, secure, and premium web design, ethical hacking, and database protection services.">
+  <meta name="keywords" content="Ali Javed, AI website developer, Cybersecurity specialist, Freelance developer, Ethical hacking, Fullstack web developer, Web security, Fiverr developer, Python developer, React nextjs UI, Security audits">
+  <meta name="author" content="Ali Javed">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ali Javed | AI Website Developer & Cybersecurity Specialist">
+  <meta property="og:description" content="Explore interactive 3D WebGL designs, web apps, and cybersecurity consulting services by Ali Javed.">
+  <meta property="og:url" content="https://www.fiverr.com/s/VYQwr7x">
+  <meta property="og:image" content="assets/img/banner-ai.png">
+
+  <!-- Google Fonts: Outfit (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Three.js Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Futuristic Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="loader-logo">
+        <span class="cyber-brand">&lt;AJ /&gt;</span>
+        <div class="cyber-scan"></div>
+      </div>
+      <div class="loader-bar-outer">
+        <div class="loader-bar-inner" id="preloader-bar"></div>
+      </div>
+      <div class="loader-status">
+        <span class="status-text">INITIALIZING QUANTUM LAYER...</span>
+        <span class="status-pct" id="preloader-pct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container container">
+      <a href="#hero" class="logo">
+        <span class="logo-symbol">&lt;</span>Ali Javed<span class="logo-symbol"> /&gt;</span>
+      </a>
+      
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Hamburger -->
+      <div class="nav-actions">
+        <a href="https://www.fiverr.com/s/VYQwr7x" target="_blank" rel="noopener noreferrer" class="btn btn-nav-cta">
+          <i data-lucide="shopping-bag"></i> Fiverr Profile
+        </a>
+        <button class="hamburger" id="hamburger-menu" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- 1. Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="cyber-badge-wrapper">
+            <span class="cyber-badge"><span class="cyber-ping"></span>SYSTEM ONLINE : VER 3.0.0</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Ali Javed</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="typed-text-prefix">I am a </span><span id="typed-text" class="typed-text"></span>
+          </h2>
+          <p class="hero-desc">
+            3+ Years of expertise crafting futuristic AI-integrated web interfaces and securing digital ecosystems against vulnerabilities.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-glow">
+              <i data-lucide="mail"></i> Hire Me
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i data-lucide="layout"></i> View Portfolio
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="avatar-frame-3d">
+            <div class="avatar-glow"></div>
+            <div class="avatar-corner c-tl"></div>
+            <div class="avatar-corner c-tr"></div>
+            <div class="avatar-corner c-bl"></div>
+            <div class="avatar-corner c-br"></div>
+            <div class="avatar-inner">
+              <img id="hero-profile-img" src="" alt="Ali Javed Professional Portrait">
+            </div>
+            <!-- Matrix data decoration -->
+            <div class="avatar-data-overlay">
+              <div class="data-row">AI_DEPLOYED: TRUE</div>
+              <div class="data-row">SEC_LEVEL: MAX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Who I Am &gt;</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="cyber-console">
+              <div class="console-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="console-title">ali_javed_core_specs.sh</span>
+              </div>
+              <div class="console-body">
+                <p class="console-line"><span class="cmd-prompt">ali@javed:~$</span> cat bio.txt</p>
+                <p id="about-bio-console" class="console-text"></p>
+                <br>
+                <p class="console-line"><span class="cmd-prompt">ali@javed:~$</span> check_integrity.sh</p>
+                <p class="console-success">[+] AI Architecture: Functional (100%)</p>
+                <p class="console-success">[+] Security Audit Level: Penetration Verified</p>
+                <p class="console-success">[+] Global Freelance Rating: 5.0 ★</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <h3>Specialized in Secure AI Integrations</h3>
+            <p id="about-bio-text"></p>
+            
+            <!-- Statistics Row -->
+            <div class="stats-grid" id="stats-container">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Core Arsenal &gt;</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Development Column -->
+          <div class="skills-column glass-card" id="development-skills-card">
+            <div class="column-header">
+              <i data-lucide="code-2" class="column-icon cyan-text"></i>
+              <h3>Full Stack & AI Development</h3>
+            </div>
+            <div class="skills-bars" id="dev-skills-container">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+          <!-- Security Column -->
+          <div class="skills-column glass-card" id="security-skills-card">
+            <div class="column-header">
+              <i data-lucide="shield" class="column-icon purple-text"></i>
+              <h3>Cybersecurity & Ethical Hacking</h3>
+            </div>
+            <div class="skills-bars" id="sec-skills-container">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; What I Deliver &gt;</span>
+          <h2 class="section-title">Professional Services</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="services-grid" id="services-container">
+          <!-- Dynamically Populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Career Path &gt;</span>
+          <h2 class="section-title">Professional Journey</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line">
+            <div class="timeline-progress" id="timeline-progress-bar"></div>
+          </div>
+          <div class="timeline-items" id="timeline-container">
+            <!-- Dynamically Populated -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Portfolio Projects Section -->
+    <section id="projects" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Crafted Operations &gt;</span>
+          <h2 class="section-title">Portfolio Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Dynamically Populated (6 Projects) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Certifications & Achievements Section -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Verified Credentials &gt;</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Certification Stats Header -->
+        <div class="certs-summary-bar glass-card">
+          <div class="cert-stat-item">
+            <span class="cert-num" id="cert-counter">0</span>
+            <span class="cert-label">Accredited Credentials</span>
+          </div>
+          <div class="cert-badge-badge">
+            <i data-lucide="award"></i> Certified Cybersecurity Professional
+          </div>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="certs-grid" id="certs-container">
+          <!-- Dynamically Populated (3 Uploaded Certificates) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Client Logs &gt;</span>
+          <h2 class="section-title">Testimonials</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-track" id="testimonials-container">
+            <!-- Dynamically Populated -->
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="testimonial-prev" aria-label="Previous Testimonial">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" id="testimonial-next" aria-label="Next Testimonial">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+          <div class="slider-dots" id="testimonial-dots">
+            <!-- Dynamic Dots -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Fiverr Section -->
+    <section id="fiverr" class="section fiverr-section">
+      <div class="container">
+        <div class="fiverr-glass-card glass-card">
+          <div class="fiverr-left">
+            <div class="fiverr-badge-design">
+              <div class="fiverr-avatar">
+                <img id="fiverr-profile-img" src="" alt="Ali Javed Fiverr Portrait">
+              </div>
+              <div class="fiverr-badge-details">
+                <h4>Ali Javed</h4>
+                <p>AI & Security Developer</p>
+                <div class="stars">
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <i data-lucide="star" class="star-fill"></i>
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fiverr-right">
+            <h3>Hire Me on Fiverr</h3>
+            <p>Ready to deploy high-security websites, custom integrations, or AI-powered layouts? Let's discuss your custom project specifications on Fiverr.</p>
+            <a href="https://www.fiverr.com/s/VYQwr7x" target="_blank" rel="noopener noreferrer" class="btn btn-fiverr btn-glow">
+              <span class="fiverr-logo-text">fi<span>verr</span></span> Profile & Order
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">&lt; Connect Node &gt;</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <!-- Email Card -->
+            <div class="contact-card glass-card">
+              <div class="card-icon-wrapper">
+                <i data-lucide="mail"></i>
+              </div>
+              <h4>Email Communications</h4>
+              <p><a href="mailto:ali123javed987@gmail.com" id="contact-email">ali123javed987@gmail.com</a></p>
+            </div>
+
+            <!-- Freelance Card -->
+            <div class="contact-card glass-card">
+              <div class="card-icon-wrapper">
+                <i data-lucide="message-square"></i>
+              </div>
+              <h4>Direct Chat & Orders</h4>
+              <p><a href="https://www.fiverr.com/s/VYQwr7x" target="_blank" rel="noopener noreferrer">Order on Fiverr</a></p>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="contact-card glass-card map-card">
+              <div class="map-placeholder">
+                <div class="map-grid"></div>
+                <div class="map-radar"></div>
+                <div class="map-pin"></div>
+                <span class="map-label">OPERATIONS NODE: ASIA/PK</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper glass-card">
+            <form id="contact-form" action="#" class="cyber-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="form-name" required placeholder=" ">
+                  <label for="form-name">Full Name</label>
+                  <span class="bar-underline"></span>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="form-email" required placeholder=" ">
+                  <label for="form-email">Email Address</label>
+                  <span class="bar-underline"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <select id="form-service" required>
+                  <option value="" disabled selected hidden>Select Service Requirement</option>
+                  <option value="ai-dev">AI Website Development</option>
+                  <option value="web-app">Custom Web Application</option>
+                  <option value="sec-audit">Cybersecurity Audit</option>
+                  <option value="sec-fix">Website Security Enhancement</option>
+                  <option value="fiverr-order">Fiverr Project Consultation</option>
+                </select>
+                <span class="bar-underline"></span>
+              </div>
+              <div class="form-group">
+                <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                <label for="form-message">Transmission Content / Message</label>
+                <span class="bar-underline"></span>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-glow" id="submit-btn">
+                  <i data-lucide="send"></i> Send Transmission
+                </button>
+              </div>
+            </form>
+            <div id="form-status" class="form-status-msg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">&lt;Ali Javed /&gt;</a>
+        <p>Expert AI Development & Cybersecurity Solutions.</p>
+        <div class="social-links">
+          <a href="https://www.fiverr.com/s/VYQwr7x" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Fiverr"><i data-lucide="shopping-cart"></i></a>
+          <a href="mailto:ali123javed987@gmail.com" class="social-link" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer-meta">
+        <h4>System Node Info</h4>
+        <div class="status-indicator">
+          <span class="pulse-dot green"></span>
+          <span>Node Secure: RSA-4096</span>
+        </div>
+        <p>Copyright &copy; <span id="footer-year">2026</span> Ali Javed. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cert Lightbox/Modal Grid Gallery -->
+  <div id="lightbox-modal" class="modal" aria-hidden="true" role="dialog">
+    <button class="modal-close-btn" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="modal-content">
+      <div class="modal-image-wrapper">
+        <img id="lightbox-img" src="" alt="Enlarged Certificate Details">
+      </div>
+      <div class="modal-details">
+        <h3 id="lightbox-title">Certificate Title</h3>
+        <p id="lightbox-desc">Issuing authority and details.</p>
+      </div>
+    </div>
+    <!-- Navigation Buttons -->
+    <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous Certificate">&#10094;</button>
+    <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next Certificate">&#10095;</button>
+  </div>
+
+  <!-- CDN scripts -->
+  <!-- 1. Three.js for 3D animated particle background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <!-- 2. GSAP for scroll trigger and reveal animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- 3. Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Project Scripts -->
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
